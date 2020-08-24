@@ -231,9 +231,10 @@ class TransactionEntry extends StatelessWidget {
                   Text(
                     "$customerInfo  |  $transacPurpose",
                     style: TextStyle(
-                      fontSize: 13,
+                      fontSize: 12,
                       color: AppColors.dashboardGray,
                     ),
+                    overflow: TextOverflow.ellipsis,
                   ),
                   SizedBox(height: 5),
                   Container(

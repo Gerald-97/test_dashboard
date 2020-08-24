@@ -27,8 +27,9 @@ class _InitAppState extends State<InitApp> {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(130.0),
+        preferredSize: Size.fromHeight(100.0),
         child: AppBar(
           automaticallyImplyLeading: false, // hides leading widget
           elevation: 0.0,
@@ -90,10 +91,13 @@ class _InitAppState extends State<InitApp> {
           children: <Widget>[
             Container(
               width: double.infinity,
-              height: size.height / 2.8,
+              height: size.height / 1.9,
               color: AppColors.defaultBlue,
               child: Column(
                 children: <Widget>[
+                  SizedBox(
+                    height: 160,
+                  ),
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 30),
                     child: DailyLimitBar(
